@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Foods</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        .foods-header {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff6347; /* Tomato color */
+            color: #fff;
+        }
+        
+        .foods-header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        
+        .foods-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        
+        .food-item {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.2s;
+            overflow: hidden
+        }
+        
+        .food-item img {
+            width: 100%;
+            height: 150px; 
+            object-fit: cover; 
+            border-radius: 10px;
+        }
+        
+        .food-item h2 {
+            margin: 10px 0 5px;
+            font-size: 1.5em;
+        }
+        
+        .food-item p {
+            margin: 0;
+            font-size: 1.1em;
+        }
+        
+        .food-item:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="foods-header">
+        <h1>Popular Foods</h1>
+    </div>
+    <div class="foods-grid">
+        <div class="food-item">
+            <img src="panner tikka.jpg" alt="Paneer Tikka">
+            <h2>Paneer Tikka</h2>
+        </div>
+        <div class="food-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL03ANqSuyMfUtSCYH5ychmAhhx3I5OQxdfQ&s" alt="Kofta Curry">
+            <h2>Kofta Curry</h2>
+        </div>
+        <div class="food-item">
+            <img src="https://www.yummyfoodrecipes.com/resources/picture/org/Karnataka-Style-Masala-Dosa.jpg" alt="Masala Dosa">
+            <h2>Masala Dosa</h2>
+        </div>
+        <div class="food-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Chole_Bhature_At_Local_Street.jpg/1200px-Chole_Bhature_At_Local_Street.jpg" alt="Chole Bhature">
+            <h2>Chole Bhature</h2>
+        </div>
+        <div class="food-item">
+            <img src="kp.jpg" alt="Kadhai Paneer">
+            <h2>Kadhai Paneer</h2>
+            <p>₹350</p>
+        </div>
+        <div class="food-item">
+            <img src="DalMakhani-500x375.webp" alt="Dal Makhni">
+            <h2>Dal Makhni</h2>
+            <p>₹290</p>
+        </div>
+        <div class="food-item">
+            <img src="new-butter-naan-500x500.jpg" alt="Butter Naan">
+            <h2>Butter Naan</h2>
+            <p>₹15 each</p>
+        </div>
+        <div class="food-item">
+            <img src="mix-veg-recipe-main-photo.jpg" alt="Mix Veg">
+            <h2>Mix Veg</h2>
+            <p>₹300</p>
+        </div>
+    </div>
+</body>
+</html>
