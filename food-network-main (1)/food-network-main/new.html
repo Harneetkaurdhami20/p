@@ -128,9 +128,9 @@
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             
-            <label for="date">Date:</label>
-            <input type="date" id="date" name="date" required>
-
+            <!-- Changed to text input for manual date entry -->
+            <label for="date">Date (MM/DD/YYYY):</label>
+            <input type="text" id="date" name="date" placeholder="Enter your date" required>
             
             <label for="guests">Number of Guests:</label>
             <input type="number" id="guests" name="guests" min="1" required>
@@ -145,18 +145,14 @@
     </footer>
 
     <script>
-    
         document.getElementById("reservationForm").addEventListener("submit", function(event) {
             event.preventDefault(); 
             
-            
             const name = document.getElementById("name").value;
-            const date = document.getElementById("date").value;
-            const time = document.getElementById("time").value;
+            const date = document.getElementById("date").value; // Manual date input
             const guests = document.getElementById("guests").value;
 
-    
-            alert(`Thank you for your reservation, ${name}!\nDate: ${date}\nTime: ${time}\nNumber of Guests: ${guests}`);
+            alert(`Thank you for your reservation, ${name}!\nDate: ${date}\nNumber of Guests: ${guests}`);
         });
     </script>
 
