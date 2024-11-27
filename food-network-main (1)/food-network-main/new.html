@@ -145,17 +145,17 @@
     </footer>
 
     <script>
-        // JavaScript function to handle form submission and alert the user
+    
         document.getElementById("reservationForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent the form from submitting
+            event.preventDefault(); 
             
-            // Get values from the form
+            
             const name = document.getElementById("name").value;
             const date = document.getElementById("date").value;
             const time = document.getElementById("time").value;
             const guests = document.getElementById("guests").value;
 
-            // Display an alert with the reservation details
+    
             alert(`Thank you for your reservation, ${name}!\nDate: ${date}\nTime: ${time}\nNumber of Guests: ${guests}`);
         });
     </script>
